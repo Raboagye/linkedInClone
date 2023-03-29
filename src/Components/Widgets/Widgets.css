@@ -1,0 +1,52 @@
+.widget {
+    flex: 0.3;
+    margin-left: 2%;
+}
+
+.widget__feed {
+    background-color: #fff;
+    border: 1px solid rgb(223, 221, 221);
+    padding: 15px 12px;
+    border-radius: 10px;
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(82, 81, 81);  
+}
+
+.text h4 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.infoIcon {
+    color: rgb(150, 150, 150);
+    width: 18px !important;
+    cursor: pointer;
+}
+
+.recommendation {
+    display: flex;
+    color: rgb(130, 129, 129);
+    margin-left: 15px;
+    cursor: pointer;
+    width: 200px;
+    padding: 1px 0 0 10px;
+}
+
+.recommendation:hover {
+    background-color: rgb(236, 235, 235);
+    border-radius: 5px;
+}
+
+.recommendation h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+.eastIcon {
+    width: 18px !important;
+}

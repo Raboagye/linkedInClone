@@ -1,0 +1,149 @@
+.loginPage__container {
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.loginPage__image {
+    width: 136px;
+    margin-left: 13.3%;
+    padding-top: 2.5px;
+    object-fit: contain;
+}
+
+.loginPage__details {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.loginpage__details__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loginpage__details__content h2 {
+    font-size: 30px;
+    font-weight: 450;
+}
+
+.Loginpage__form {
+    width: 45%;
+    background-color: #fff;
+    padding: 6% 4%;
+    border-radius: 10px;
+    margin-top: 4%;
+    border: 1px solid rgb(223, 221, 221);
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.Loginpage__form h4 {
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 13px;
+    width: 112px;
+    color: rgb(92, 91, 91);
+    margin-top: -10px;
+}
+
+.Loginpage__form h4:hover {
+    color: #2977c9;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.inputs input {
+    margin-bottom: 25px;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 0 10px;
+}
+
+.buttom__submit {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #2977c9;
+    color: #fff;
+    font-size: 15px;
+    padding: 7px 0;
+    cursor: pointer;
+}
+
+
+.or__hr {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.or__hr hr {
+    width: 45%;
+    height: 0.1px;
+}
+
+.or__hr p {
+    margin: 0 10px;
+    padding-bottom: 5px;
+}
+
+.google__button {
+    height: 25px;
+    margin-top: 15px;
+}
+
+.or__google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 15px;
+    cursor: pointer;
+    color: rgb(92, 91, 91);
+}
+
+.or__google:hover {
+    background-color: rgb(240, 240, 240);
+    border: 2px solid rgb(26, 26, 26);
+    
+}
+
+.button__logo {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.join__now {
+    height: 25px;
+    margin-top: 30px;
+}
+
+.or__join {
+    padding: 7px 0;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 13px;
+    cursor: pointer;
+    color: rgb(92, 91, 91);
+    font-weight: 550;
+}
+
+.or__join:hover {
+    background-color: rgb(240, 240, 240);
+    border: 2px solid rgb(26, 26, 26);
+}

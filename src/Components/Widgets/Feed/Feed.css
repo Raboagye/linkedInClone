@@ -1,0 +1,55 @@
+
+.feed__content {
+    margin-top: 10px;
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.feed__avatar {
+    width: 50px !important;
+    height: 50px !important;
+    margin-right: 10px;
+}
+
+.feed__content__details h4 {
+    font-weight: 600;
+    margin-bottom: 3px;
+    font-size: 14px;
+}
+
+.feed__content__details h6 {
+    font-weight: 400;
+    font-size: 12px;
+    color: gray;
+    margin-bottom: 7px;
+}
+
+.feed__content__details__button {
+    height: 32px;
+}
+
+.feed__content__details__button button {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 3px 12px 3px 9px;
+    border-radius: 20px;
+    width: 100px;
+    justify-content: space-evenly;
+    background-color: #fff;
+    border: 1.5px solid gray;
+    color: rgb(72, 72, 72);
+    height: 100%;
+}
+
+.addIcon {
+    width: 20px !important;
+}
+
+.feed__content__details__button button:hover {
+    background-color: rgb(239, 237, 237);
+    border: 2.5px solid gray;
+    cursor: pointer;
+}
+

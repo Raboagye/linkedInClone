@@ -1,0 +1,58 @@
+.navBar__container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff;
+    border-bottom: 0.2px solid rgb(234, 232, 232);
+}
+
+.navBar__left {
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+
+.navBar__right {
+    display: flex;
+}
+
+.immediate__right {
+    display: flex;
+    border-right: 0.2px solid rgb(229, 228, 228);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.far__right {
+    display: flex;
+    padding-top: 5px;
+
+}
+
+.navBar__left img {
+    max-width: 35px;
+    object-fit: contain;
+}
+
+.navBarLeft__input {
+    display: flex;
+    align-items: center;
+    margin-left: 7px;
+    color: #6f7173;
+    background-color: #eef3f8;
+    padding: 5px 10px;
+    width: 100%;
+    border-radius: 5px;
+    height: 25px;
+}
+
+.navBarLeft__input input {
+    border: none;
+    outline: none;
+    background-color: #eef3f8;
+    width: 100%;
+
+}

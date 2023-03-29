@@ -1,0 +1,66 @@
+.share{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid rgb(223, 221, 221);
+    margin-top: 1.5% ;
+    padding: 10px 0;
+}
+
+.share__details {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.share__name__email {
+    margin-left: 10px;
+}
+
+.share__name__email h4 {
+    font-size: 14px;
+    color:#454545;
+    font-weight: 600;
+}
+
+.share__name__email p {
+    font-size: 12px;
+    color: gray;
+}
+
+.share__description {
+    margin: 10px 15px;
+}
+
+.share__description h4 {
+    font-size: 14px;
+    color:#454545;
+    font-weight: 400;
+}
+
+.share__postOptions {
+    display: flex;
+    color: gray;
+    margin: 0 12px;
+    justify-content: space-between;
+}
+
+.Post__parameters {
+    display: flex;
+    color: gray;
+    align-items: center;
+    padding: 15px 22px;
+    margin: 3px 0;
+}
+
+.Post__parameters:hover {
+    background-color: #eae9e7;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.Post__parameters h4 {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
