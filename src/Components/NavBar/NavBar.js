@@ -16,33 +16,41 @@ const NavBar = () => {
         auth.signOut()
     }
     return ( 
-        <div className="navBar__container">
-            <div className="navBar__left">
-                <img src="https://www.nicepng.com/png/full/919-9192440_facebook-twitter-google-plus-linkedin-linkedin-logo-transparent.png" alt="LinkedIn__logo" />
-                <div className="navBarLeft__input">
-                    <SearchIcon />
-                    <input placeholder="Search" />
-                    {/* <button type="submit">post</button> */}
+        <div className="navBar"> 
+
+            <div className="navBar__container">
+                <div className="navBar__left">
+                    <img src="https://www.nicepng.com/png/full/919-9192440_facebook-twitter-google-plus-linkedin-linkedin-logo-transparent.png" alt="LinkedIn__logo" />
+                    <div className="navBarLeft__input">
+                        <SearchIcon />
+                        <input placeholder="Search" />
+                        {/* <button type="submit">post</button> */}
+                    </div>
+                </div>
+
+                <div className="navBar__right">
+                    <div className="immediate__right">
+                        <Options Icon={HouseIcon} name="Home" />
+                        <Options Icon={SupervisorAccountIcon} name="My Network" />
+                        <Options Icon={BusinessCenterIcon} name="Jobs" />
+                        <Options Icon={SmsIcon} name="Messaging" />
+                        <Options Icon={NotificationsIcon} name="Notifications" />
+                        <Options onclick={() => signingOut()} Avatar={Avatar} name="Me" />
+                    </div>
+                    <div className="far__right">
+                        <Options Icon={AppsIcon} name="Work" />
+                        <Options Icon={PostAddIcon} name="Work" />
+                    </div>
+                    <div className="only__message">
+                        <Options Icon={SmsIcon} name="Messaging" />
+                    </div>
+
+
                 </div>
             </div>
 
-            <div className="navBar__right">
-                <div className="immediate__right">
-                    <Options Icon={HouseIcon} name="Home" />
-                    <Options Icon={SupervisorAccountIcon} name="My Network" />
-                    <Options Icon={BusinessCenterIcon} name="Jobs" />
-                    <Options Icon={SmsIcon} name="Messaging" />
-                    <Options Icon={NotificationsIcon} name="Notifications" />
-                    <Options onclick={()=> signingOut() } Avatar={Avatar} name="Me" />
-                </div>
-                <div className="far__right"> 
-                    <Options Icon={AppsIcon} name="Work" />
-                    <Options Icon={PostAddIcon} name="Work" />
-                </div>
-                
-
-            </div>
         </div>
+        
      );
 }
  

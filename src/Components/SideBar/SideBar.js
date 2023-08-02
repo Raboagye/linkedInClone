@@ -15,12 +15,14 @@ const SideBar = () => {
         )
     }
 
+    const display = user?.displayName && user?.displayName[0]
+
     return ( 
         <div className="main__container">
             <div className="sideBar__container">
                 <div className="profile__info">
                     <div className="image__avatar">
-                        <Avatar className="avatarr" src={user.photoUrl}>{user.displayName[0]}</Avatar>
+                        <Avatar className="avatarr" src={user.photoUrl}>{display}</Avatar>
                     </div>
 
                     <h4>{user.displayName}</h4>

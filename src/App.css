@@ -1,5 +1,7 @@
 .app {
     background-color: #f3f2ef;
+    min-height: 100vh;
+    position: relative;
 }
 
 .app__body {
@@ -7,5 +9,31 @@
     width: 75%;
     margin: auto;
     margin-top: 1.5%;
+    /* background-color: brown; */
 
+}
+
+.navBar__bottom {
+    display: none;
+    position: fixed ;
+    top: 92.5vh;
+    height: 6vh;
+    background-color: white;
+    padding: 5px 0;
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    .app__body {
+        width: 90%;
+    }
+}
+
+
+
+@media (max-width: 576px) {
+    .navBar__bottom {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }

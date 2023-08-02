@@ -14,16 +14,18 @@ const SharePosts = ({name, email, description, photoUrl}) => {
     const ShareOptions = (Icon, title) => {
         return (
             <div className="Post__parameters">
-                {<Icon />}
+                {<Icon className="postParameters__icon"/>}
                 <h4>{title}</h4>
             </div>
         )
     }
 
+    const display = user?.displayName && user?.displayName[0]
+
     return ( 
         <div className="share">
             <div className="share__details">
-                <Avatar className="share__avatar" src={photoUrl}>{user.displayName[0]}</Avatar>
+                <Avatar className="share__avatar" src={photoUrl}>{display}</Avatar>
                 <div className="share__name__email">
                     <h4>{name}</h4>
                     <p>{email}</p>

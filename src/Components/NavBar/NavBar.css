@@ -1,12 +1,25 @@
-.navBar__container {
-    display: flex;
-    justify-content: space-evenly;
+.navBar {
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 999;
     background-color: #fff;
+    /* background-color: red; */
     border-bottom: 0.2px solid rgb(234, 232, 232);
+
+}
+
+.navBar__container {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    margin: auto;
+    background-color: #fff;
+    border-bottom: 0.2px solid rgb(234, 232, 232);
+    /* background-color: red; */
 }
 
 .navBar__left {
@@ -33,8 +46,9 @@
 }
 
 .navBar__left img {
-    max-width: 35px;
+    max-width: 11%;
     object-fit: contain;
+    min-width: 30px;
 }
 
 .navBarLeft__input {
@@ -55,4 +69,51 @@
     background-color: #eef3f8;
     width: 100%;
 
+}
+
+.only__message {
+    display: none;
+}
+
+@media (max-width: 738px) {
+    .navBar__container {
+        width: 90%;
+        margin: auto;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        height: 4.5vh;
+    }
+
+    .navBar__left {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navBarLeft__input {
+        width: 79%;
+    }
+
+    .immediate__right {
+        display: none;
+    }
+
+    .far__right {
+        display: none;
+    }
+
+    .only__message {
+        display: block;
+    }
+
+    .navBar__left img {
+        width: 25px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navBar__container {
+        width: 90%;
+    }
 }

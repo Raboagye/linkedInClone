@@ -1,6 +1,7 @@
 .widget {
     flex: 0.3;
     margin-left: 2%;
+    min-width: 250px;
 }
 
 .widget__feed {
@@ -49,4 +50,12 @@
 
 .eastIcon {
     width: 18px !important;
+}
+
+
+
+@media (max-width: 1070px) {
+    .widget {
+        display: none;
+    }
 }

@@ -1,0 +1,24 @@
+.optionss__container {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #666666;
+}
+
+.avatar {
+    width: 25px !important;
+    height: 25px !important;
+}
+
+
+.optionss__container h4 {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.optionss__container:hover {
+    color: #000;
+    cursor: pointer;
+}

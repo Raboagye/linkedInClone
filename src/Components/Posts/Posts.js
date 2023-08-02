@@ -54,16 +54,19 @@ const Posts = () => {
     const PostOptions = (Icon, title, color) => {
         return (
             <div className="post__parameters">
-                {<Icon style={{color: color}}/>}
+                {<Icon style={{color: color}} className="postParameters__icon"/>}
                 <h4>{title}</h4>
             </div>
         )
     }
+
+    const display = user?.displayName && user?.displayName[0]
+
     return ( 
         <div className="posts">
             <div className="share__posts">
                 <div className="post__input">
-                    <Avatar className="posts__avatar" src={user.photoUrl}>{user.displayName[0]}</Avatar>
+                    <Avatar className="posts__avatar" src={user.photoUrl}>{display}</Avatar>
                     <form className="post__input__content">
                         <input value={input} type="text" placeholder="Start a post" name="name" onChange={captureInput}/>
                         <button onClick={sendPost} type="submit">submit</button>

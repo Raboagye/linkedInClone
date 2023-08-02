@@ -1,11 +1,13 @@
 .main__container {
     flex: 0.2;
+    min-width: 200px;
 }
 
 .sideBar__container {
     background-color: #fff;
     border-radius: 10px;
     border: 1px solid rgb(223, 221, 221);
+    width: 100%;
 }
 
 .profile__info {
@@ -151,10 +153,13 @@
 
 .hashtags__container {
     background-color: #fff;
+    /* background-color: brown; */
     border-radius: 10px;
     border: 1px solid rgb(223, 221, 221);
     margin-top: 3%;
     padding-bottom: 7px;
+    position: sticky;
+    top: 52px;
 }
 
 .hashtags__container h4 {
@@ -180,5 +185,19 @@
 
 .tags__hash {
     margin-right: 10px;
+}
+
+@media (max-width: 1070px) {
+    .main__container {
+        flex: 0.3;
+    }
+    .hashtags__container {
+        top: 36.6px;
+    }
+}
+@media (max-width: 738px) {
+    .main__container {
+        display: none;
+    }
 }
 
